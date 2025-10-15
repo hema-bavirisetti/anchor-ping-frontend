@@ -30,6 +30,7 @@ pub mod anchor_counter {
         Ok(())
     }
 
+
     pub fn decrement(ctx: Context<Update>) -> Result<()> {
         // Get the current count and log it.
         let counter = &mut ctx.accounts.counter;
@@ -54,6 +55,7 @@ pub struct Initialize<'info> {
     pub user: Signer<'info>,
     pub system_program: Program<'info, System>,
 }
+
 
 #[derive(Accounts)]
 pub struct Update<'info> {

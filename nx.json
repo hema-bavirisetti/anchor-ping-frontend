@@ -14,6 +14,7 @@
     ],
     "sharedGlobals": []
   },
+  
   "targetDefaults": {
     "@nx/next:build": {
       "cache": true,
